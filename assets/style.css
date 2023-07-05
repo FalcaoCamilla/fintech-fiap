@@ -1,0 +1,16 @@
+.div-cards {
+    height: 25% !important;
+    margin: 5% auto !important;
+}
+
+.card {
+    height: 100% !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-white:hover {
+    background: rgb(63, 63, 63) !important;
+}
