@@ -18,15 +18,15 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        <a class="nav-link" aria-current="page" href="#">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Metas</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Transações</a>
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Transações</a>
                         <ul class="dropdown-menu bg-dark">
-                            <li><a class="dropdown-item color-white" href="#">Receitas</a></li>
+                            <li><a class="dropdown-item color-white active" href="#">Receitas</a></li>
                             <li><a class="dropdown-item color-white" href="#">Despesas</a></li>
                             <li><hr class="dropdown-divider color-white"></li>
                             <li><a class="dropdown-item color-white" href="#">Investimentos</a></li>
@@ -46,5 +46,86 @@
             
         </div>
     </nav>
+    <div class="form">
+        <h3 class="titulo-form">Lançamento de receita</h3>
+        <div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Descrição">
+                <label for="floatingInput">Descrição</label>
+            </div>
+            <div class="container-input">
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Categorias">
+                    <option selected></option>
+                    <option selected value="1">Roupa</option>
+                    <option value="2">Alimentação</option>
+                    <option value="3">Renda</option>
+                    <option value="4">Extra</option>
+                    <option value="5">Vendas</option>
+                    </select>
+                    <label for="floatingSelect">Categorias</label>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text icone-input">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event-fill" viewBox="0 0 16 16">
+                            <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                    </span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGroup2" placeholder="dd-mm-aaaa">
+                        <label for="floatingInputGroup2">Data</label>
+                    </div>
+                </div>
+            </div>
+            <div class="carteira-group">
+                <div class="input-group mb-3">
+                    <span class="input-group-text icone-input"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                            <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                        </svg>
+                    </span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGroup2" placeholder="Valor">
+                        <label for="floatingInputGroup2">Valor</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text icone-input"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                            <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                        </svg>
+                    </span>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Carteiras">
+                            <option selected>Inserir na carteira</option>
+                            <option value="1">Poupança</option>
+                            <option value="2">Nubank</option>
+                            <option value="3">Carteira pessoal</option>
+                            <option value="4">Bradesco</option>
+                        </select>
+                        <label for="floatingSelect">Carteiras</label>
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="parcela-input">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">parcelado</label>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="quantidade de parcelas" aria-label="quantidade de parcelas" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">vezes</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-sm btn-submit">Lançar</button>
+        </div>
+    </div>
+
+        
 </body>
 </html>
