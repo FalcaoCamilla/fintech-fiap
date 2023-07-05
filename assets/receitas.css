@@ -1,0 +1,34 @@
+body, html {
+    background: #fafafa !important;
+}
+
+.mensagem-boas-vindas {
+    font-size: 17px !important;
+}
+
+strong {
+    color: rgb(255, 220, 124);
+}
+
+.nav-perfil {
+    width: 30% !important;
+    justify-content: end !important;
+    align-items: baseline !important;
+}
+
+.titulo-inicio {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+.color-white {
+    color: white !important;
+}
+
+.color-white:hover {
+    background: rgb(63, 63, 63) !important;
+}

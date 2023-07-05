@@ -1,10 +1,78 @@
+body, html {
+    background: #fafafa !important;
+}
+
+.mensagem-boas-vindas {
+    font-size: 17px !important;
+}
+
+strong {
+    color: rgb(255, 220, 124);
+}
+
+.nav-perfil {
+    width: 30% !important;
+    justify-content: end !important;
+    align-items: baseline !important;
+}
+
+.titulo-inicio {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.periodo {
+    color: gray;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.periodo:first-of-type{
+    font-size: 14px;
+    color: rgb(123, 123, 255) !important;
+}
+
+.periodo:nth-of-type(2) {
+    font-size: 13px
+}
+
+.periodo > span {
+    color: rgb(123, 123, 255) !important;
+}
+
 .div-cards {
     height: 25% !important;
-    margin: 5% auto !important;
+    width: 90% !important;
+    margin: 2% auto !important;
 }
 
 .card {
     height: 100% !important;
+}
+
+.col-sm-3:first-of-type {
+    padding: 0 !important;
+}
+
+.card-body {
+    box-shadow: 0px 0px 7px #ebebeb;
+}
+
+.card-body:hover {
+    box-shadow: 0px 0px 7px #e3e3e3;
+}
+
+.card-text {
+    color: gray;
+    font-size: 14px
+}
+
+.card-info-text {
+    color: rgb(149, 149, 149);
+    font-style: italic
 }
 
 .color-white {
@@ -13,4 +81,73 @@
 
 .color-white:hover {
     background: rgb(63, 63, 63) !important;
+}
+
+.resumo-lancamentos {
+    width: 90% !important;
+    margin: 3% auto 0 !important;
+}
+
+.titulo-resumo {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.tabela-resumo {
+    box-shadow: 0px 0px 3px #ebebeb !important;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+tr > th:last-of-type {
+    text-align: center !important;
+}
+
+.span-receita {
+    background: #bfecd7;
+    color: #198754;
+    padding: 6px;
+    border-radius: 8px;
+    display: block;
+    width: 60%;
+    text-align: center;
+}
+
+.span-despesa {
+    background: #ffd2d2;
+    color: #b43030;
+    padding: 6px;
+    border-radius: 8px;
+    display: block;
+    width: 60%;
+    text-align: center;
+}
+
+.categoria {
+    padding: 6px;
+    border-radius: 8px;
+    display: block;
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.categoria-bg-1 {
+    background: #f2d2ff;
+    color: #9730b4;
+}
+
+.categoria-bg-2 {
+    background: #d2e5ff;
+    color: #3093b4;
+}
+
+.categoria-bg-3 {
+    background: #fff8d2;
+    color: #e6d83c;
 }
